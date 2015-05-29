@@ -160,6 +160,7 @@ end
 		-- Called when the scene is still off screen and is about to move on screen
 	elseif phase == "did" then
 		print("hiding")
+		buttonBkg:removeEventListener( "touch")
 		display:remove(homeBtn)
 		display:remove(buttonBkg)
 		display:remove(buttonText)
